@@ -77,8 +77,11 @@ function wrongpage(){
 	div.appendChild(img);
 	var gg=document.getElementById(guess);
 	gg.src="wrong.jpg";
-	if(guess<8) {
+	if(guess<9) {
 	guess=guess+1;}
+	else{
+		alert("LOSE!!");
+		window.close();}
 	
 	
 }
