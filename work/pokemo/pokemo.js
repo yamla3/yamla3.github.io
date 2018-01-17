@@ -77,11 +77,12 @@ function wrongpage(){
 	div.appendChild(img);
 	var gg=document.getElementById(guess);
 	gg.src="wrong.jpg";
-	if(guess<9) {
+	if(guess<8) {
 	guess=guess+1;}
 	else{
 		alert("LOSE!!");
-		window.close();}
+		window.close();
+		window.open("pokemo2.html");}
 	
 	
 }
