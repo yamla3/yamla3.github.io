@@ -15,7 +15,7 @@
         speed4 = 0.1;
 
 var timer1 = setInterval(function () {
-                speed1 += 0.1;
+                speed1 += 0.15;
                 if(speed1 > 60){
                     clearInterval(timer1);
                     return false;
@@ -27,8 +27,8 @@ var timer1 = setInterval(function () {
             },10);
 
 var timer2 = setInterval(function () {
-                speed2 += 0.08;
-                if(speed2 > 60){
+                speed2 += 0.1;
+                if(speed2 > 40){
                     clearInterval(timer2);
                     return false;
                 }
@@ -39,8 +39,8 @@ var timer2 = setInterval(function () {
             },10);
 
 var timer3 = setInterval(function () {
-                speed3 += 0.04;
-                if(speed3 > 30){
+                speed3 += 0.1;
+                if(speed3 > 40){
                     clearInterval(timer3);
                     return false;
                 }
@@ -51,7 +51,7 @@ var timer3 = setInterval(function () {
             },10);
 
 var timer4 = setInterval(function () {
-                speed4 += 0.06;
+                speed4 += 0.09;
                 if(speed4 > 30){
                     clearInterval(timer4);
                     return false;
@@ -65,8 +65,8 @@ var timer4 = setInterval(function () {
 //畫外圈
     function whiteCircle(context,n){
         context.save();
-        context.strokeStyle = "#fff"; //描邊樣式
-        context.lineWidth = 39; //線寬
+        context.strokeStyle = "#FFF"; //描邊樣式
+        context.lineWidth = 15; //線寬
         context.beginPath(); //路徑開始
         context.arc(centerX, centerY, 114 , -Math.PI/2, -Math.PI/2 - n*rad, true); //(x座標，y座標，半徑，起始角度，終止角度，順/逆時針)
         context.stroke(); //繪製
@@ -76,9 +76,9 @@ var timer4 = setInterval(function () {
     //藍色內圈
     function blueCircle(context){
         context.save();
-        context.fillStyle="#4EC2EA";
-        context.lineWidth=39;
-        context.strokeStyle = "#81D5F1";
+        context.fillStyle="#BEBEBE";
+        context.lineWidth=15;
+        context.strokeStyle = "#aaa";
         context.beginPath();
         context.arc(centerX,centerY,114,0,2*Math.PI,false);//順時針
         context.fill();

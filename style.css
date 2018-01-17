@@ -35,7 +35,8 @@ nav {
 .container2 {
   padding: 20px; }
   .container2 .logobox {
-    text-align: center; }
+    text-align: center;
+	}
   .container2 h2 {
     margin-top: 35px; }
   .container2 img {
@@ -43,9 +44,9 @@ nav {
     max-height: 400px; }
 
 .container3 {
-  background-color: #afd0e7; }
+  background-color: #BEBEBE }
   .container3 .logotext {
-    background-color: #afd0e7; }
+    background-color: #BEBEBE }
   .container3 .soft {
     margin-top: 70px; }
   .container3 .softL {
@@ -114,4 +115,4 @@ footer {
   border: 5px solid #000; }
   
 
-/*# sourceMappingURL=style.css.map */
+
