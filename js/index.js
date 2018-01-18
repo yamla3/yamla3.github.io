@@ -16,7 +16,7 @@
 
 var timer1 = setInterval(function () {
                 speed1 += 0.15;
-                if(speed1 > 60){
+                if(speed1> 60 ){
                     clearInterval(timer1);
                     return false;
                 }

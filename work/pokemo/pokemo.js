@@ -80,8 +80,8 @@ function wrongpage(){
 	if(guess<8) {
 	guess=guess+1;}
 	else{
-		alert("LOSE!!");
-		window.close();
+		alert("進入正常版?");
+		
 		window.open("pokemo2.html");}
 	
 	

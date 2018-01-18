@@ -3,40 +3,45 @@
 <head>
   <meta charset="utf-8">
   <title> pokemo go go </title>
-  <script src="pokemo.js"></script>
-  <link href="pokemo.css" rel="stylesheet">
+  <script src="pokemo2.js"></script>
+  <link href="pokemo2.css" rel="stylesheet">
+  
+  
 <body>
-   	 <h1>神奇寶貝 猜猜我是誰????</h1>
-	 <div id="tableCOntainer">
-		<div id="tableRow">
-	 <div id="leftside">
-	 <h2>答題次數</h2>
-	  <div id="aaa">
-	  
-	  </div>
+   	
+	<div id="header">
+	 <h1>神奇寶貝 猜猜我是誰????</h1>
 	 </div>
-	 <div id="rightside">
-	  <img id="zero" src="zeroblur.jpg" ></br>
-    
-	  <input type="button" class="Button" id="0"  value="妙蛙種子!">
-	  <input type="button" class="Button" value="皮卡丘!">
-	  <input type="button" class="Button" value="小火龍!"></br>
-	 
-      <img id="one" src="oneblur.jpg" ></br>
+	<div id="tableContainer">
+	<div id="tableRow">
+	 <div id="main">
+	 <img src="images/0.jpg" id="zero" width="400">
+	 </div>
+	
+	<div id="footer">
+     <h2>答題區</h2>
+	 <input type="radio" name="guess" onclick="test(this)" value="1" >大甲
+	 <input type="radio" name="guess" onclick="test(this)" value="2" >大岩蛇
+	 <input type="radio" name="guess" onclick="test(this)" value="3">小火龍
+	 <input type="radio" name="guess" onclick="test(this)" value="4">瓦斯彈
+	 <input type="radio" name="guess" onclick="test(this)" value="5">皮卡丘
+	 <input type="radio" name="guess" onclick="test(this)" value="6">妙蛙種子</br>
+	 <input type="radio" name="guess" onclick="test(this)" value="7">傑尼龜
+	 <input type="radio" name="guess" onclick="test(this)" value="8">超夢
+	 <input type="radio" name="guess" onclick="test(this)" value="9">綠毛蟲
+	 <input type="radio" name="guess" onclick="test(this)" value="10">鐵甲蛹
+	</div>
+	  
+     <div id="sidebar">  
+   <p>完成度</p>
+    <canvas class="canvas col-xs-12 col-md-12" id="canvas1" width="300" height="300"></canvas>
+        
+	<p>答對率</p>
+    <canvas class="canvas col-xs-12 col-md-12" id="canvas2" width="300" height="300"></canvas>
+     </div>  
+     </div>
+		</div>
      
-	  <input type="button" class="Button2" id="1" value="皮卡丘!">
-      <input type="button" class="Button2" value="妙蛙種子!">
-      <input type="button" class="Button2" value="可達鴨!"></br>
-	
-	  <img id="two" src="twoblur.jpg" ></br>  
 	 
-      <input type="button" class="Button3" id="2" value="超夢!">
-      <input type="button" class="Button3" value="皮卡丘!">
-	  <input type="button" class="Button3" value="可達鴨!"></br>
-	</div>
-	</div>
-	</div>
-	<audio src="神奇寶貝第一季OP.mp3" autoplay="autoplay">
-	
 </body>
 </html>
