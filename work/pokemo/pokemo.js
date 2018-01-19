@@ -80,9 +80,12 @@ function wrongpage(){
 	if(guess<8) {
 	guess=guess+1;}
 	else{
-		alert("進入正常版?");
 		
-		window.open("pokemo2.html");}
+		alert("進入正常版?");
+		var abc=document.getElementById("turn");
+		
+		abc.click();
+	}
 	
 	
 }
