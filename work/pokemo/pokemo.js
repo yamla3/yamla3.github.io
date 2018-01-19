@@ -22,14 +22,13 @@ function showAnswer1(obj){
 	wrongpage();
 	
 	if (name=="0") {
-	var image=document.getElementById("zero");
-	image.src="zero.jpg";
-	setTimeout(reblur,1500,image);
-	}
-	else {
-	var image=document.getElementById("zero");
-	image.src="妙蛙.jpg";
-	setTimeout(reblur,1500,image);
+		var image=document.getElementById("zero");
+		image.src="zero.jpg";
+		setTimeout(reblur,1500,image);
+	} else {
+		var image=document.getElementById("zero");
+		image.src="妙蛙.jpg";
+		setTimeout(reblur,1500,image);
 	}
 }
 
@@ -40,14 +39,13 @@ function showAnswer2(obj){
 	wrongpage();
 	
 	if (name=="1"){
-	var image=document.getElementById("one");
-	image.src="one.jpg";
-	setTimeout(reblur,1500,image);
-	}
-	else {
-	var image=document.getElementById("one");
-	image.src="皮卡丘.jpg";
-	setTimeout(reblur,1500,image);
+		var image=document.getElementById("one");
+		image.src="one.jpg";
+		setTimeout(reblur,1500,image);
+	} else {
+		var image=document.getElementById("one");
+		image.src="皮卡丘.jpg";
+		setTimeout(reblur,1500,image);
 	}
 }
 
@@ -57,14 +55,13 @@ function showAnswer3(obj){
 	wrongpage();
 	
 	if (name=="2"){
-	var image=document.getElementById("two");
-	image.src="two.jpg";
-	setTimeout(reblur,1500,image);
-	}
-	else {
-	var image=document.getElementById("two");
-	image.src="超夢.jpg";
-	setTimeout(reblur,1500,image);
+		var image=document.getElementById("two");
+		image.src="two.jpg";
+		setTimeout(reblur,1500,image);
+	} else {
+		var image=document.getElementById("two");
+		image.src="超夢.jpg";
+		setTimeout(reblur,1500,image);
 	}
 }
 
@@ -77,7 +74,6 @@ function reblur(image){
 }
 
 function wrongpage(){
-	
 	var img=document.createElement("img");
 	img.setAttribute("id",guess)
 	var div=document.getElementById("aaa");
@@ -86,12 +82,10 @@ function wrongpage(){
 	gg.src="wrong.jpg";
 	
 	if (guess<8) {
-	guess=guess+1;
-	}
-	else {
+		guess=guess+1;
+	} else {
 		alert("進入正常版?");
 		var abc=document.getElementById("turn");
-		
 		abc.click();
 	}
 }
