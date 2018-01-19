@@ -14,52 +14,58 @@ function init() {
 	for (var i=0; i<guessButton.length; i++){
 	guessButton[i].onclick=showAnswer3;}
 	
-	
 }
 
 function showAnswer1(obj){
 	var button=obj.target;
 	var name=button.id;
 	wrongpage();
-	if (name=="0"){
+	
+	if (name=="0") {
 	var image=document.getElementById("zero");
 	image.src="zero.jpg";
-	setTimeout(reblur,1500,image);}
-	
+	setTimeout(reblur,1500,image);
+	}
 	else {
 	var image=document.getElementById("zero");
 	image.src="妙蛙.jpg";
-	setTimeout(reblur,1500,image);}
-		
+	setTimeout(reblur,1500,image);
 	}
+}
 
 
 function showAnswer2(obj){
 	var button=obj.target;
 	var name=button.id;
 	wrongpage();
-	if(name=="1"){
+	
+	if (name=="1"){
 	var image=document.getElementById("one");
 	image.src="one.jpg";
-	setTimeout(reblur,1500,image);}
+	setTimeout(reblur,1500,image);
+	}
 	else {
 	var image=document.getElementById("one");
 	image.src="皮卡丘.jpg";
-	setTimeout(reblur,1500,image);}
+	setTimeout(reblur,1500,image);
+	}
 }
 
 function showAnswer3(obj){
 	var button=obj.target;
 	var name=button.id;
 	wrongpage();
-	if(name=="2"){
+	
+	if (name=="2"){
 	var image=document.getElementById("two");
 	image.src="two.jpg";
-	setTimeout(reblur,1500,image);}
+	setTimeout(reblur,1500,image);
+	}
 	else {
 	var image=document.getElementById("two");
 	image.src="超夢.jpg";
-	setTimeout(reblur,1500,image);}
+	setTimeout(reblur,1500,image);
+	}
 }
 
 
@@ -78,15 +84,14 @@ function wrongpage(){
 	div.appendChild(img);
 	var gg=document.getElementById(guess);
 	gg.src="wrong.jpg";
-	if(guess<8) {
-	guess=guess+1;}
-	else{
-		
+	
+	if (guess<8) {
+	guess=guess+1;
+	}
+	else {
 		alert("進入正常版?");
 		var abc=document.getElementById("turn");
 		
 		abc.click();
 	}
-	
-	
 }
