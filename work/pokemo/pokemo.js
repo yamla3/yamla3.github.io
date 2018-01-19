@@ -1,4 +1,5 @@
 window.onload=init;
+var guess=0
 
 function init() {
 	var guessButton=document.getElementsByClassName("Button");
@@ -19,7 +20,7 @@ function init() {
 function showAnswer1(obj){
 	var button=obj.target;
 	var name=button.id;
-	
+	wrongpage();
 	if (name=="0"){
 	var image=document.getElementById("zero");
 	image.src="zero.jpg";
@@ -36,7 +37,7 @@ function showAnswer1(obj){
 function showAnswer2(obj){
 	var button=obj.target;
 	var name=button.id;
-	
+	wrongpage();
 	if(name=="1"){
 	var image=document.getElementById("one");
 	image.src="one.jpg";
@@ -50,7 +51,7 @@ function showAnswer2(obj){
 function showAnswer3(obj){
 	var button=obj.target;
 	var name=button.id;
-	
+	wrongpage();
 	if(name=="2"){
 	var image=document.getElementById("two");
 	image.src="two.jpg";
@@ -66,9 +67,9 @@ function reblur(image){
 	var name=image.id;
 	name=name+"blur.jpg";
 	image.src=name;
-    wrongpage();
+    
 }
-var guess=0
+
 function wrongpage(){
 	
 	var img=document.createElement("img");
